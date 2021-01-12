@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import './Header.css';
 
 function Header() {
     return (
-        <div>
-            
-        </div>
+        <nav className="header">
+            <img
+            src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+            className="header__logo"
+            alt="" />
+        </nav>
     )
 }
 
