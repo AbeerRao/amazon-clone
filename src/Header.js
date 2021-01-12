@@ -18,6 +18,29 @@ function Header() {
                 <SearchOutlined
                 className="header__searchIcon" />
             </div>
+
+            <div className="header__nav">
+                <Link to="/login" className="header__navLink">
+                    <div className="header__option">
+                        <span className="header__option1">Hello, </span>
+                        <span className="header__option2">Sign in</span>
+                    </div>
+                </Link>
+
+                <Link to="" className="header__navLink">
+                    <div className="header__option">
+                        <span className="header__option1">Returns </span>
+                        <span className="header__option2">& Orders</span>
+                    </div>
+                </Link>
+
+                <Link to="" className="header__navLink">
+                    <div className="header__option">
+                        <span className="header__option1">Your </span>
+                        <span className="header__option2">Prime</span>
+                    </div>
+                </Link>
+            </div>
         </nav>
     )
 }
