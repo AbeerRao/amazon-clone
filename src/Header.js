@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import {SearchOutlined} from '@material-ui/icons';
+import {SearchOutlined, ShoppingBasket} from '@material-ui/icons';
 
 function Header() {
     return (
@@ -38,6 +38,13 @@ function Header() {
                     <div className="header__option">
                         <span className="header__option1">Your </span>
                         <span className="header__option2">Prime</span>
+                    </div>
+                </Link>
+
+                <Link to="/checkout" className="header__navLink">
+                    <div className="header__optionBasket">
+                        <ShoppingBasket />
+                        <span className="header__option2 header__optionBasketCount">0</span>
                     </div>
                 </Link>
             </div>
